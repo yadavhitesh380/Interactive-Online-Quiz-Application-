@@ -1,4 +1,4 @@
-                                              # 📝 Online Quiz Application
+# 📝 Online Quiz Application
 
 <p align="center">
   An interactive <strong>quiz application</strong> built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.<br>
