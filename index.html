@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="overflow: auto;">
+  <!-- floating bubbles -->
+  <div class="bubble" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="bubble" style="left: 30%; animation-delay: 4s; width: 25px; height: 25px;"></div>
+  <div class="bubble" style="left: 50%; animation-delay: 8s;"></div>
+  <div class="bubble" style="left: 70%; animation-delay: 12s; width: 35px; height: 35px;"></div>
+  <div class="bubble" style="left: 90%; animation-delay: 16s;"></div>
+
+  <div class="app">
+    <h1>🌟Online Quiz App🌟</h1>
+
+    <!-- Progress bar -->
+    <div class="progress-container hidden" id="progressContainer">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <div class="controls" id="controlsBox">
+      <div class="control-group">
+        <label for="category">Category:</label>
+        <select id="category" name="category">
+          <option value="">Any</option>
+          <option value="9">General Knowledge</option>
+          <option value="17">Science & Nature</option>
+          <option value="18">Science: Computers</option>
+          <option value="21">Sports</option>
+          <option value="22">Geography</option>
+          <option value="23">History</option>
+          <option value="11">Entertainment: Film</option>
+          <option value="12">Entertainment: Music</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="difficulty">Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+          <option value="">Any</option>
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="numQuestions">Number of Questions:</label>
+        <input type="number" id="numQuestions" name="numQuestions" value="5" min="1" max="20">
+      </div>
+      <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div id="quizBox" class="hidden">
+      <div class="quiz-content">
+        <div id="timerDisplay"></div>
+        <div id="questionBox"></div>
+        <ul id="choices"></ul>
+        <div id="feedbackBox"></div>
+      </div>
+      <button id="nextBtn" class="hidden">Next</button>
+    </div>
+
+    <div id="resultBox" class="hidden">
+      <h2>Quiz Finished!</h2>
+      <p id="score"></p>
+      <div id="wrongAnswersBox">
+        <h3>Review Your Answers:</h3>
+        <div id="wrongAnswersList"></div>
+      </div>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+    
+  <script src="script.js"></script>
+</body>
+</html>
