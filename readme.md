@@ -1,4 +1,4 @@
-# 📝 Online Quiz App
+                                              # 📝 Online Quiz Application
 
 <p align="center">
   An interactive <strong>quiz application</strong> built with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.<br>
@@ -79,3 +79,4 @@ Made with ❤️ by **Hitesh Yadav**
 <p align="center">
   ⭐ If you found this helpful, star the repo and share it!
 </p>
+
